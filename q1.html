@@ -5,60 +5,187 @@
     <title>
         Admin Panel
     </title>
-    <link rel="stylesheet" href="./q1.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css">
+    <link rel="stylesheet" href="https://purecss.io/layouts/side-menu/styles.css">
+    <script src="https://purecss.io/js/ui.js"></script>
+        <link rel="stylesheet" href="./q1.css">
 </head>
 
 <body>
     <div class="container1">
-        <div class="leftpanel">
-            <a class="admin">
-                <img src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png" width="12%"> 
-                <div class="admin1">Admin panel</div>
+        <div id="layout">
+            <a href="#menu" id="menuLink" class="menu-link">
+                <span></span>
             </a>
-            <div class="container2">
-                <a class="options">Manage Categories</a>
-                <a class="options">Add Company</a>
-                <a class="options">Add new User</a>
-                <a class="options">Add new certificates</a>
-                <a class="options">University Actions</a>
-                <a class="options">Add Students</a>
-                <a class="options">Add MCQ Questions</a>
-                <a class="options">Recruiters & Jobs</a>
-                <a class="options">Universities</a>
-                <a class="options">View All Users</a>
-                <a class="options">Trial Version</a>
-                <a class="options">Add blogs</a>
-            </div>
-            <div class="profile">
-                <div class="profimg">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1250/1250689.png" width="30%">
+            <div id="menu">
+                <div class="pure-menu">
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item">
+                            <a class="admin">
+                                <img src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png"
+                                    width="30px">
+                                <div class="admin1">Admin panel</div>
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="#">Manage Categories</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="#">Add Company</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="#">Add new User</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="#">Add new certificates</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="#">University Actions</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="#">Add Students</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="#">Add MCQ Questions</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="#">Recruiters & Jobs</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="#">Universities</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="#">View All Users</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="#">Trial Version</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="#">Add blogs</a>
+                        </li>
+                        </li>
+                        <li class="pure-menu-item">
+                            <div class="profile">
+                                <div class="profimg">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/1250/1250689.png" width="40px">
+                                </div>
+                                <div class="profile2">
+                                    <div class="profile1">
+                                        Placeholder Name
+                                    </div>
+                                    <div class="profile1">
+                                        Placeholder Postion
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="profile2">
-                <div class="profile1">
-                    Placeholder Name
+            </div>
+            <div class="main">
+                <div class="manage">
+                    <div class="left"> Admin > <b>Manage Categories</b></div>
+                    <div class="right"><button class="bright">+ Add Category</button></div>
                 </div>
-                <div class="profile1">
-                    Placeholder Postion
+                <div class="tags">
+                    <a class="pill" href="#">Finance</a>
+                    <a class="pill" href="#">Electronics</a>
+                    <a class="pill" href="#">Content Writing</a>
+                    <a class="pill" href="#">Teaching</a>
+                    <a class="pill" href="#">Construction</a>
+                    <a class="pill" href="#">Management</a>
+                    <a class="pill" href="#">Misc</a>
+                </div>
+                <div class="search">
+                    <div class="lefts">Certificates Under The Category</div>
+                    <div><input type="text" class="bar" placeholder="Search Certificates"></div>
+                </div>
+                <div class="panels">
+                    <div class="panel">
+                        <div class="top">
+                            <div class="cat">
+                                <h3>Finance</h3>
+                            </div>
+                            <div><a href="#">Know More >></a></div>
+                        </div>
+                        <div class="cert">
+                            <div>Accounts Finance</div>
+                            <div class="num">7</div>
+                        </div>
+                        <div class="buttons">
+                            <button class="cb" id="tag">Tag A Job</button>
+                            <button class="cb" id="emp">Employees Enrolled >></button>
+                        </div>
+                        <div>
+                            <button class="assign">Assign Certificate</button>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="top">
+                            <div class="cat">
+                                <h3>Finance</h3>
+                            </div>
+                            <div><a href="#">Know More >></a></div>
+                        </div>
+                        <div class="cert">
+                            <div>Taxation Finance</div>
+                            <div class="num">4</div>
+                        </div>
+                        <div class="buttons">
+                            <button class="cb" id="tag">Tag A Job</button>
+                            <button class="cb" id="emp">Employees Enrolled >></button>
+                        </div>
+                        <div>
+                            <button class="assign">Assign Certificate</button>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="top">
+                            <div class="cat">
+                                <h3>Finance</h3>
+                            </div>
+                            <div><a href="#">Know More >></a></div>
+                        </div>
+                        <div class="cert">
+                            <div>Finance</div>
+                            <div class="num">5</div>
+                        </div>
+                        <div class="buttons">
+                            <button class="cb" id="tag">Tag A Job</button>
+                            <button class="cb" id="emp">Employees Enrolled >></button>
+                        </div>
+                        <div>
+                            <button class="assign">Assign Certificate</button>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="top">
+                            <div class="cat">
+                                <h3>Finance</h3>
+                            </div>
+                            <div><a href="#">Know More >></a></div>
+                        </div>
+                        <div class="cert">
+                            <div>Financial Market Analyst</div>
+                            <div class="num">0</div>
+                        </div>
+                        <div class="buttons">
+                            <button class="cb" id="tag">Tag A Job</button>
+                            <button class="cb" id="emp">Employees Enrolled >></button>
+                        </div>
+                        <div>
+                            <button class="assign">Assign Certificate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pages">
+                    <button class="pn" href="#">1</button>
+                    <button class="pn" href="#">2</button>
+                    <button class="pn" href="#">3</button>
+                    <button class="pn" href="#">4</button>
+                    <button class="pn" href="#">5</button>
                 </div>
             </div>
-            </div>
-        </div>
-        <div class="rightpanel">
-            <div class="manage">
-                <div class="right"> Admin > <b>Manage Categories</b></div>
-                <div class="left"><button class="bleft">Add Category</button></div>
-            </div>
-            <div class="tags">
-                <div class="pill">Finance</div>
-                <div class="pill">Electronics</div>
-                <div class="pill">Content Writing</div>
-                <div class="pill">Teaching</div>
-                <div class="pill">Construction</div>
-                <div class="pill">Management</div>
-                <div class="pill">Misc</div>
-            </div>
-            <div class="search"></div>
-            <div class="panels"></div>
         </div>
     </div>
 </body>
